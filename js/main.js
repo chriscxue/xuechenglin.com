@@ -20,7 +20,7 @@ const artworks = [
         id: 7,
         title: "ALFRED HILL",
         category: "illustration",
-        image: "images/works/alfred-hill/cover.png",
+        image: "images/works/alfred-hill/cover.jpg",
         description: "Φ 14 cm h 5 cm / Arduino, Vibration Motor, Ceramic Bowl / 2018",
         link: "alfred-hill.html"
     },
@@ -28,7 +28,7 @@ const artworks = [
         id: 2,
         title: "VIBRATION",
         category: "website",
-        image: "images/works/vibration/cover.png",
+        image: "images/works/vibration/cover.jpg",
         description: "20X30 in / Visualization of sound data / Digital Print / 2010",
         link: "vibration.html"
     },
@@ -36,7 +36,7 @@ const artworks = [
         id: 5,
         title: "SOLILOQUIZE",
         category: "website",
-        image: "images/works/soliloquize/cover.png",
+        image: "images/works/soliloquize/cover.jpg",
         description: "Vibration Data, Arduino & Vibration Sensor, MAXMSP / 30X30 in / 2013",
         link: "soliloquize.html"
     },
@@ -60,7 +60,7 @@ const artworks = [
         id: 6,
         title: "3733 61ST WOODSIDE",
         category: "photography",
-        image: "images/works/3733-61st-woodside/cover.png",
+        image: "images/works/3733-61st-woodside/cover.jpg",
         description: "3 Panels, each 62X47 in / C-Print / 2013",
         link: "3733-61st-woodside.html"
     }
