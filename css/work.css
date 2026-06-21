@@ -1,0 +1,334 @@
+/* 作品详情页样式 - 仿照visuelle.co.uk */
+
+/* 作品详情页的header样式 */
+.singlePost .other-menu {
+    position: relative !important;
+    top: auto !important;
+    margin-top: 15px !important;
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* 详情页筛选菜单样式 */
+.singlePost .searchandfilter {
+    width: 100%;
+    visibility: visible !important;
+    opacity: 1 !important;
+    display: block !important;
+}
+
+.singlePost .searchandfilter ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.singlePost .searchandfilter ul li {
+    list-style: none;
+}
+
+.singlePost .searchandfilter ul li ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.singlePost .searchandfilter ul li ul li {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.singlePost .searchandfilter ul li ul li a {
+    color: #1a1a1a;
+    text-decoration: none;
+    padding: 1px 0 2px;
+    border-bottom: 1px solid #1a1a1a;
+    transition: all 0.3s;
+}
+
+.singlePost .searchandfilter ul li ul li a:hover {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+/* 导航链接active状态 */
+.nav-link.active {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+/* About链接样式 */
+.about-link {
+    color: #1a1a1a;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    text-decoration: none;
+    padding: 1px 0 2px;
+    border-bottom: 1px solid #1a1a1a;
+    transition: all 0.3s;
+}
+
+.about-link:hover {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.singlePost .nav-right {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.singlePost header,
+.singlePost .site-header {
+    display: flex;
+}
+
+/* 内容容器 */
+.content-container {
+    padding: 15px 30px 60px;
+}
+
+/* 顶部区域 - 标题和日期 */
+.single-top {
+    display: flex;
+}
+
+.single-top .left {
+    flex: 0 0 33.33%;
+}
+
+.single-top .right {
+    flex: 0 0 66.66%;
+}
+
+/* 内容主区域 */
+.content-hero {
+    display: flex;
+}
+
+.content-hero .right {
+    flex: 0 0 40%;
+    padding: 0 20px 0 30px;
+}
+
+.content-hero .right h1 {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.content-hero .left {
+    flex: 0 0 60%;
+}
+
+/* 日期样式 */
+.date {
+    color: #1a1a1a;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #1a1a1a;
+}
+
+/* 图片网格 */
+.image-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    display: grid;
+    padding-top: 85px;
+}
+
+/* 标题样式 */
+.single-top h1 {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 0;
+    color: #1a1a1a;
+}
+
+/* 描述文字 */
+.content-hero .right p {
+    color: #333;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* 按钮容器 */
+.button-container {
+    margin: 40px 0;
+    display: block;
+}
+
+/* 按钮样式 */
+a.button {
+    color: #1a1a1a;
+    border: 1px solid #878b89;
+    border-radius: 30px;
+    padding: 8px 40px;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+a.button:hover {
+    background-color: #1a1a1a;
+    color: #fff !important;
+}
+
+/* 图片样式 */
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.content-hero .left img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 返回链接 */
+.back-link {
+    color: #1a1a1a;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.back-link:hover {
+    opacity: 0.7;
+}
+
+/* About页面样式 */
+.about-page-content {
+    margin-left: 33.33%;
+    max-width: 800px;
+    padding: 80px 30px 80px 0;
+}
+
+.about-section {
+    margin-bottom: 50px;
+}
+
+.about-section h2 {
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+
+.about-section h3 {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+    border-bottom: 1px solid #1a1a1a;
+    padding-bottom: 10px;
+}
+
+.about-section p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.about-section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.about-section ul li {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.about-section ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #1a1a1a;
+}
+
+.work-item {
+    margin-bottom: 20px;
+}
+
+.work-item p {
+    margin-bottom: 5px;
+}
+
+.about-page-content a {
+    color: #1a1a1a;
+    text-decoration: none;
+    border-bottom: 1px solid #1a1a1a;
+    transition: all 0.3s;
+}
+
+.about-page-content a:hover {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .content-hero {
+        flex-direction: column;
+    }
+
+    .content-hero .right {
+        padding: 30px 0 0;
+    }
+
+    .image-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-page-content {
+        flex-direction: column;
+        gap: 0;
+        margin-left: 0;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .content-container {
+        padding: 15px;
+    }
+
+    .single-top .left {
+        flex: 0 0 66.66%;
+    }
+
+    .single-top .right {
+        flex: 0 0 33.33%;
+    }
+
+    .single-top h1 {
+        font-size: 28px;
+    }
+
+    .image-container {
+        grid-template-columns: 1fr;
+    }
+}

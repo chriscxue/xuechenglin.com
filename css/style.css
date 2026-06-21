@@ -1,0 +1,418 @@
+/* 字体 */
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* 基础样式重置 */
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    -webkit-text-size-adjust 100%;
+    line-height: 1.15;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    background-color: #fff;
+    color: #1a1a1a;
+    font-family: 'Courier Prime', 'Courier New', Courier, monospace;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+main {
+    display: block;
+    color: #1a1a1a;
+    background-color: #fff;
+    position: relative;
+    top: 60px;
+    padding-bottom: 140px;
+}
+
+h1, .date {
+    color: #1a1a1a;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+a, a:visited, a:hover, a:focus, a:active {
+    color: #1a1a1a;
+}
+
+a {
+    background-color: transparent;
+}
+
+a:hover {
+    outline: 0;
+}
+
+p {
+    color: #1a1a1a;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+img {
+    border-style: none;
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: outside;
+    margin: 0 0 1.5em 3em;
+}
+
+/* 头部样式 */
+header,
+.site-header {
+    padding: 30px;
+    display: flex !important;
+    min-height: 80px;
+    background-color: #fff;
+    border-bottom: none;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative;
+}
+
+.container {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+.site-branding {
+    flex: 0 0 33.3%;
+    gap: 2px;
+    height: 100%;
+    display: flex;
+}
+
+.site-title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #1a1a1a;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.site-title:hover {
+    opacity: 0.7;
+}
+
+.site-branding img {
+    width: 100%;
+    max-width: 70px;
+}
+
+#toggleLight {
+    cursor: pointer;
+}
+
+/* 导航右侧 */
+.nav-right {
+    flex: 0 0 66.6%;
+    position: relative;
+}
+
+/* 筛选菜单 - 原网站使用form和radio按钮 */
+.searchandfilter ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.searchandfilter ul li {
+    color: #1a1a1a;
+    cursor: pointer;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+.searchandfilter ul li li {
+    cursor: pointer;
+    border-bottom: 1px solid #1a1a1a;
+    padding: 0;
+}
+
+.searchandfilter ul li li:hover {
+    color: #1a1a1a;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.searchandfilter ul li li label {
+    cursor: pointer;
+    padding: 4px 0;
+    padding-left: 0 !important;
+}
+
+.searchandfilter ul li li input {
+    display: none;
+}
+
+.sf-level-0 {
+    transition: background-color 0.3s;
+    padding: 6px 0;
+}
+
+.sf-level-0:hover {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.sf-level-0:hover label,
+.sf-level-0:hover .nav-link {
+    color: #fff;
+}
+
+/* 其他菜单 */
+.other-menu {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 15px;
+    display: flex !important;
+    position: relative;
+    top: auto;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.other-menu .search,
+.other-menu .about {
+    color: #1a1a1a;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.other-menu .search:hover,
+.other-menu .about:hover {
+    color: #1a1a1a;
+    cursor: pointer;
+}
+
+/* 搜索框 */
+.sf-field-search {
+    opacity: 0;
+    z-index: -1;
+    height: 0;
+    transition: height 0.5s, opacity 0.5s;
+    position: relative;
+    top: 60px;
+}
+
+.sf-field-search.visible {
+    opacity: 1;
+    z-index: 1;
+    height: auto;
+}
+
+.sf-field-search label {
+    width: 100%;
+    height: 100%;
+}
+
+.sf-field-search label input {
+    color: #1a1a1a;
+    background: transparent;
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-size: 160px;
+    font-weight: 300;
+}
+
+.sf-field-search label input:focus {
+    outline: none;
+}
+
+.sf-field-search label input::placeholder {
+    color: #1a1a1a;
+}
+
+/* 关于页面 */
+.about-box {
+    color: #1a1a1a;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    line-height: 22px;
+    position: relative;
+}
+
+.about-box-content {
+    gap: 50px;
+    margin-top: 80px;
+    display: flex;
+}
+
+.about-left,
+.about-right {
+    flex: 0 0 50%;
+}
+
+.hidden {
+    opacity: 0;
+    transition: opacity 0.5s;
+    display: none;
+}
+
+.visible {
+    opacity: 1;
+    display: block;
+}
+
+/* 作品网格 */
+.submissionsLoop {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px 20px;
+    padding: 60px 20px;
+    display: grid;
+}
+
+/* 作品卡片 */
+.card {
+    transition: transform 0.5s;
+}
+
+.card a {
+    color: #1a1a1a;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: none;
+}
+
+.card-image {
+    height: 340px;
+    overflow: hidden;
+}
+
+.card-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 340px;
+    transition: transform 0.5s;
+    overflow: hidden;
+}
+
+.card:hover .card-image img {
+    transform: scale(1.1);
+}
+
+.card-content {
+    margin-top: 15px;
+}
+
+.card-content h1 {
+    color: #1a1a1a;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    transition: transform 0.5s;
+}
+
+.card:hover .card-content h1 {
+    transition: transform 0.5s;
+    color: #1a1a1a !important;
+}
+
+/* 汉堡按钮 */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #1a1a1a;
+    padding: 0;
+    font-family: inherit;
+    line-height: 1;
+}
+
+/* 响应式设计 */
+@media (max-width: 1100px) {
+    .sf-field-search label input {
+        font-size: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    header,
+    .site-header {
+        padding-right: 20px;
+    }
+
+    .container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .site-branding {
+        flex: 1;
+    }
+
+    .menu-toggle {
+        display: block;
+        flex-shrink: 0;
+    }
+
+    .nav-right {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        padding: 0 30px 20px;
+        z-index: 100;
+    }
+
+    .nav-right.open {
+        display: block;
+    }
+
+    .sf-field-search label input {
+        font-size: 60px;
+    }
+
+    .submissionsLoop {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-box-content {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 20px;
+    }
+
+    main {
+        top: 0;
+    }
+
+    .submissionsLoop {
+        grid-template-columns: 1fr;
+        padding-top: 30px;
+    }
+}
